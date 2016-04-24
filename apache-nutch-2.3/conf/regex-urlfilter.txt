@@ -45,13 +45,14 @@
 +^http://category.vip.com/$
 
 #http://category.vip.com/入口页面各分类链接: 
-#http://category.vip.com/search-1-0-1.html?q=3|20263&wz=9
-+^http://category.vip.com/search-\d*-0-1.html\?q=\d*\|\d*&.*=\d*$
+
+#demo: http://category.vip.com/search-1-0-1.html?q=3|30942&link=man|0|1|1
++^http://category.vip.com/search-\d*-0-1.html\?q=\d*\|\d*&.*=.*\|\d*\|\d*\|\d*$
 
 #各分类列表页面“上一页”，“下一页”链接：
 #http://category.vip.com/search-1-0-3.html?q=3|7851|#catPerPos
-#http://category.vip.com/search-1-0-2.html?q=3|7851|#catPerPos
-+^http://category.vip.com/search-\d*-0-\d*.html\?q=\d*\|\d*\|#catPerPos$
+#demo: http://category.vip.com/search-1-0-2.html?q=3|30942||&rp=30834|30847#catPerPos
++^http://category.vip.com/search-\d*-0-\d*.html\?q=\d*\|\d*\|*&rp=\d*\|\d*#catPerPos$
 
 #分类列表页面的商品详情链接：
 #http://www.vip.com/detail-371486-48229111.html
@@ -88,3 +89,19 @@
 ################# huanqiu.com ##########################
 +^http://s.huanqiu.com/s/\?q=%E5%A4%A7%E6%95%B0%E6%8D%AE&p=[0-9]*$
 +^http://.*.huanqiu.com/roll/[0-9]{4}-[0-9]{2}/[0-9]*.html$
+
+
+################ qunar.com ######################
+#城市列表页
+#demo http://hotel.qunar.com/city/guangzhou/
++^http://hotel.qunar.com/city/.*/$
+
+#详情页:
+# http://hotel.qunar.com/city/guangzhou/dt-1992/?tag=guangzhou#fromDate=2016-04-23&toDate=2016-04-24&q=&from=list_page&fromFocusList=0&filterid=c7a57717-3e03-41dc-8656-9e71a715474f_A&showMap=0&qptype=&QHFP=ZSS_A1A0EC92 
++^http://hotel.qunar.com/city/.*/.*$
+
+#各分类列表页面“上一页”，“下一页”链接：
++http://te.hotel.qunar.com/render/renderAPIList.jsp.*
+
+# accept anything else
+#+.*

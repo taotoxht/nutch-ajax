@@ -1,4 +1,4 @@
-http://s.huanqiu.com/s/?q=%E5%A4%A7%E6%95%B0%E6%8D%AE&p=1
+#http://s.huanqiu.com/s/?q=%E5%A4%A7%E6%95%B0%E6%8D%AE&p=1
 
 #http://jt.cpd.com.cn/
 #http://www.scjtaq.com
@@ -14,3 +14,11 @@ http://s.huanqiu.com/s/?q=%E5%A4%A7%E6%95%B0%E6%8D%AE&p=1
 #http://item.jumei.com/d150309p13153zc.html
 #http://www.jumeiglobal.com/deal/ht150122p933681t1.html
 #http://www.jumeiglobal.com/deal/ht150312p1286156t1.html
+
+#http://hotel.elong.com/guangzhou/32001005/
+#http://s.yaochufa.com/
+
+#去哪儿 网
+#1.城市列表页
+http://hotel.qunar.com/city/guangzhou/
+http://hotel.qunar.com/city/guangzhou/dt-9743/

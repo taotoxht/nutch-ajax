@@ -336,11 +336,10 @@ public class HttpResponse implements Response {
     }
 
     private boolean readPlainContentByHtmlunit(URL url) throws Exception {
-
         String urlStr = url.toString();
         if (urlStr.indexOf("detail.tmall.com") > -1) {
             return false;
-        }
+           }
         Http.LOG.debug("Htmlunit fetching: " + url);
         HtmlPage page = (HtmlPage) HttpWebClient.getHtmlPage(urlStr, conf);
         charset = page.getPageEncoding();
